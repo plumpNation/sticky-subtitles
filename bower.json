@@ -1,0 +1,21 @@
+{
+  "name": "sticky-subtitles",
+  "version": "0.0.0",
+  "homepage": "https://github.com/plumpNation/sticky-subtitles",
+  "authors": [
+    "Gavin King <gavin.king@fronter.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sticky": "git://github.com/FronterAS/position--sticky-.git#master",
+    "angular": "~1.2.16"
+  }
+}

@@ -1,0 +1,47 @@
+/* Thanks Paul Irish */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, #wrapper {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#wrapper {
+    padding-top: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    font-family: Helvetica Neue, sans-serif;
+    background: red;
+    width:700px;
+    margin: auto;
+    overflow: auto;
+    height: 70%;
+}
+
+.sticky {
+    margin: 50px 0 0 0;
+    position: sticky;
+    background:rgb(50,50,250);
+    height:50px;
+    text-align: center;
+    line-height: 46px;
+    color: white;
+    font-size: 30px;
+    top:0;
+}
+
+.sticky:first-child {
+    margin: 0;
+}

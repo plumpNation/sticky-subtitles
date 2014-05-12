@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ui.sticky.subtitles">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Sticky menu example</title>
+        <link rel="stylesheet" href="ho.css">
+        <script src="bower_components/sticky/sticky.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="app.js"></script>
+        <script src="menu-item-service.js"></script>
+    </head>
+
+    <body>
+        <div id="wrapper" ng-controller="StickyMenu">
+            <div id="container">
+                <div ng-repeat="(subtitle, menuItems) in menu" class="submenu-container">
+                    <h2 class="sticky menu-subtitle menu-item">{{subtitle}}</h2>
+                    <ul class="menu">
+                        <li ng-repeat="menuItem in menuItems track by $index"
+                            class="menu-item">
+                            {{menuItem}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
